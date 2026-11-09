@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static boolean esPrimo(int n) {
@@ -21,6 +23,19 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
+        int num;
+
+        System.out.println("Ingrese un número entero:");
+        num = sc.nextInt();
+
+        if (esPrimo(num)) {
+            System.out.println("El número es primo.");
+        } else {
+            System.out.println("El número no es primo.");
+        }
+
+        sc.close();
     }
 }
